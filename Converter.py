@@ -1,7 +1,6 @@
-import sys
+from sys import exit
 
-_continue = True
-while _continue:
+while True:
     print("=======================")
     print("Выберите валюту для конвертации:")
     print("[0] USD -- > UAH\n[1] UAH --> USD\n[9] Выход из программы.")
@@ -19,5 +18,5 @@ while _continue:
             print(UAH, " UAH = ", USD, " USD")
     elif choice == 9:
         print("Выход из программы...")
-        sys.exit()
+        exit()
     print("=======================\n")
